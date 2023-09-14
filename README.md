@@ -18,7 +18,7 @@ Feel free to explore the project.
 
 ## Project GIF
 
-![Project Snapshot](/assets/CryptoTracker.gif)
+![Project Snapshot](/assets/holidayfinder.gif)
 
 ## Technologies Used
 
@@ -32,7 +32,7 @@ We would greatly appreciate your contributions to the project. Your help and con
 
 You can access the live demo of the project using the following link:
 
-[Live Demo](https://portfolio-imoguz.vercel.app/)
+[Live Demo](https://imoguz.github.io/holidayfinder/)
 
 ## Contact
 
