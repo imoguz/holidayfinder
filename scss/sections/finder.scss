@@ -1,0 +1,35 @@
+.finder {
+  @include flexing(space-between);
+  margin: 2rem 6rem;
+  &--image {
+    width: 50%;
+  }
+  &--text {
+    width: 50%;
+    & h2 {
+      @include myFont("Playfair Display", 4rem, 600);
+    }
+    & h3 {
+      @include myFont(Inter, 1.4rem, 600);
+      margin: 1rem 0;
+    }
+    & hr {
+      width: 2rem;
+      border: 1px solid;
+    }
+    &__option {
+      @include flexing(space-between);
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+      & select {
+        width: 48%;
+        height: 2.5rem;
+        border-radius: 8px;
+      }
+    }
+    &__button {
+      @include btnStyle($btncolor, white, 6rem);
+    }
+  }
+}

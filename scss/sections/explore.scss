@@ -1,0 +1,23 @@
+.explore {
+  @include flexing(space-between);
+  margin: 2rem 4rem;
+  &--image {
+    width: 50%;
+  }
+  &--text {
+    margin: 0 3rem;
+    text-align: left;
+    & h1 {
+      @include myFont("Playfair Display", 2rem, 700);
+    }
+    & p {
+      @include myFont(Mulish, 1.1rem, 400);
+      line-height: 30px;
+      color: #7d7987;
+      margin-bottom: 1rem;
+    }
+    &__button {
+      @include btnStyle($btncolor, white, 12rem);
+    }
+  }
+}

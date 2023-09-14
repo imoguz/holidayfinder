@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+  .header,
+  .explore,
+  .finder--text__option,
+  .destinations--header,
+  .destinations--cart {
+    flex-direction: column;
+  }
+  .header {
+    padding: 1rem 0;
+  }
+  .finder {
+    margin: 2rem 0;
+    text-align: center;
+    &--image {
+      width: 80%;
+    }
+    &--text {
+      width: 80%;
+      & h2 {
+        font-size: 2.5rem;
+      }
+      & hr {
+        display: none;
+      }
+    }
+    flex-direction: column-reverse;
+    &--text__option select {
+      width: 100%;
+    }
+    &--text__button {
+      @include btnStyle($btncolor, white, 12rem);
+    }
+  }
+}
+.explore {
+  margin: 2rem 0;
+  text-align: center;
+  &--image {
+    width: 90%;
+  }
+}
+.destinations {
+  margin: 5rem 0;
+  &--cart div {
+    width: 70%;
+    height: 325px;
+    border-radius: 0.7rem;
+  }
+}

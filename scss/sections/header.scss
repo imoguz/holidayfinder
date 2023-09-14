@@ -1,0 +1,25 @@
+.header {
+  @include flexing(space-between);
+  padding: 1rem 6rem;
+  @include myFont(Inter, 1rem, 500);
+  &--img {
+    height: 3rem;
+  }
+  &--navmenu {
+    color: $headerColor;
+    word-spacing: 0.3rem;
+    & a {
+      text-decoration: none;
+    }
+    &__login {
+      @include btnStyle(white, $btncolor, 6rem);
+    }
+    &__register {
+      @include btnStyle($btncolor, white, 6rem);
+    }
+    &__passive {
+      pointer-events: none;
+      color: lightgray;
+    }
+  }
+}

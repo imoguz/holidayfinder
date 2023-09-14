@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header--img {
+  height: 3rem;
+}
+.header--navmenu {
+  color: #202336;
+  word-spacing: 0.3rem;
+}
+.header--navmenu a {
+  text-decoration: none;
+}
+.header--navmenu__login {
+  background-color: white;
+  color: #fb8f1d;
+  padding: 7px;
+  width: 6rem;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header--navmenu__register {
+  background-color: #fb8f1d;
+  color: white;
+  padding: 7px;
+  width: 6rem;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header--navmenu__passive {
+  pointer-events: none;
+  color: lightgray;
+}
+
+.finder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 6rem;
+}
+.finder--image {
+  width: 50%;
+}
+.finder--text {
+  width: 50%;
+}
+.finder--text h2 {
+  font-family: "Playfair Display";
+  font-size: 4rem;
+  font-weight: 600;
+}
+.finder--text h3 {
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.finder--text hr {
+  width: 2rem;
+  border: 1px solid;
+}
+.finder--text__option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.finder--text__option select {
+  width: 48%;
+  height: 2.5rem;
+  border-radius: 8px;
+}
+.finder--text__button {
+  background-color: #fb8f1d;
+  color: white;
+  padding: 7px;
+  width: 6rem;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.destinations {
+  padding: 3rem 8rem 3rem 8rem;
+}
+.destinations--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.destinations--header a {
+  text-decoration: none;
+  color: #fb8f1d;
+}
+.destinations--cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.destinations--cart div {
+  width: 20%;
+  height: 325px;
+  border-radius: 0.7rem;
+}
+.destinations--cart div p {
+  position: relative;
+  top: 280px;
+  background-color: white;
+  width: 10rem;
+  padding: 6px 5px;
+  border-bottom-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #042521;
+}
+.destinations--cart div p span {
+  font-family: Inter;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #80918e;
+}
+
+.destinations--cart__img1 {
+  background-image: url(../assets/1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+}
+
+.destinations--cart div:hover {
+  scale: 1.05;
+  transition: all 2s;
+}
+
+.destinations--cart__img2 {
+  background-image: url(../assets/2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+}
+
+.destinations--cart div:hover {
+  scale: 1.05;
+  transition: all 2s;
+}
+
+.destinations--cart__img3 {
+  background-image: url(../assets/3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+}
+
+.destinations--cart div:hover {
+  scale: 1.05;
+  transition: all 2s;
+}
+
+.destinations--cart__img4 {
+  background-image: url(../assets/4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+}
+
+.destinations--cart div:hover {
+  scale: 1.05;
+  transition: all 2s;
+}
+
+.footer {
+  background-color: #f9f9fb;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+.footer i {
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all, 1s;
+}
+.footer i:hover {
+  color: #fb8f1d;
+  transition: all, 1s;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .explore,
+  .finder--text__option,
+  .destinations--header,
+  .destinations--cart {
+    flex-direction: column;
+  }
+  .header {
+    padding: 1rem 0;
+  }
+  .finder {
+    margin: 2rem 0;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .finder--image {
+    width: 80%;
+  }
+  .finder--text {
+    width: 80%;
+  }
+  .finder--text h2 {
+    font-size: 2.5rem;
+  }
+  .finder--text hr {
+    display: none;
+  }
+  .finder--text__option select {
+    width: 100%;
+  }
+  .finder--text__button {
+    background-color: #fb8f1d;
+    color: white;
+    padding: 7px;
+    width: 12rem;
+    border: 1px solid #fb8f1d;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+.explore {
+  margin: 2rem 0;
+  text-align: center;
+}
+.explore--image {
+  width: 90%;
+}
+
+.destinations {
+  margin: 5rem 0;
+}
+.destinations--cart div {
+  width: 70%;
+  height: 325px;
+  border-radius: 0.7rem;
+}
+
+.explore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+}
+.explore--image {
+  width: 50%;
+}
+.explore--text {
+  margin: 0 3rem;
+  text-align: left;
+}
+.explore--text h1 {
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.explore--text p {
+  font-family: Mulish;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: #7d7987;
+  margin-bottom: 1rem;
+}
+.explore--text__button {
+  background-color: #fb8f1d;
+  color: white;
+  padding: 7px;
+  width: 12rem;
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

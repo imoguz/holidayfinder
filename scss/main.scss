@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap");
+@import "./base/reset.scss";
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+@import "./sections/header.scss";
+@import "./sections/finder.scss";
+@import "./sections/destinations.scss";
+@import "./sections/footer.scss";
+@import "./components/responsive.scss";
+@import "./sections/explore.scss";

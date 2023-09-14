@@ -1,0 +1,48 @@
+.destinations {
+  padding: 3rem 8rem 3rem 8rem;
+  &--header {
+    @include flexing(space-between);
+    margin-bottom: 2rem;
+    & a {
+      text-decoration: none;
+      color: $btncolor;
+    }
+  }
+  &--cart {
+    @include flexing(center);
+    gap: 0.8rem;
+    & div {
+      width: 20%;
+      height: 325px;
+      border-radius: 0.7rem;
+      & p {
+        position: relative;
+        top: 280px;
+        background-color: white;
+        width: 10rem;
+        padding: 6px 5px;
+        border-bottom-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
+        @include myFont(Inter, 0.9rem, 600);
+        color: #042521;
+        & span {
+          @include myFont(Inter, 0.7rem, 300);
+          color: #80918e;
+        }
+      }
+    }
+  }
+}
+@for $i from 1 through 4 {
+  .destinations--cart__img#{$i} {
+    background-image: url(../assets/#{$i}.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 2s;
+  }
+  .destinations--cart div:hover {
+    scale: 1.05;
+    transition: all 2s;
+  }
+}

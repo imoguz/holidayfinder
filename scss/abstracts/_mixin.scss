@@ -1,0 +1,19 @@
+@mixin btnStyle($bgcolor, $tcolor, $btwidth) {
+  background-color: $bgcolor;
+  color: $tcolor;
+  padding: 7px;
+  width: $btwidth;
+  border: 1px solid $btncolor;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@mixin flexing($jusCon) {
+  display: flex;
+  justify-content: $jusCon;
+  align-items: center;
+}
+@mixin myFont($ff, $fs, $fw) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+}

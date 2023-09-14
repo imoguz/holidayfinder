@@ -1,0 +1,14 @@
+.footer {
+  background-color: $footerColor;
+  padding: 1.2rem 0;
+  text-align: center;
+  & i {
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all, 0.5s;
+    &:hover {
+      color: $btncolor;
+      transition: all, 1s;
+    }
+  }
+}
